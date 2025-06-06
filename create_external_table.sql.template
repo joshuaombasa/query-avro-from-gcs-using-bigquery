@@ -1,0 +1,5 @@
+CREATE OR REPLACE EXTERNAL TABLE `{{PROJECT_ID}}.{{DATASET_ID}}.{{TABLE_NAME}}`
+OPTIONS (
+  format = 'AVRO',
+  uris = ['gs://{{BUCKET_NAME}}/{{FILE_PATH}}']
+);
